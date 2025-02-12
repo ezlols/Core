@@ -841,7 +841,7 @@ EspEnable.MouseButton1Down:connect(function()
 	end
 end)
 
-_G.sizeof = 55
+_G.sizeof = 155
 _G.AimOn = false
 _G.TeamCheckOn = true
 _G.Aimpart = "Head"
@@ -1046,9 +1046,9 @@ FovCircle.Radius = _G.sizeof
 FovCircle.Color = _G.CircleColor
 FovCircle.Visible = _G.CircleVisible
 FovCircle.NumSides = _G.CircleSides
-FovCircle.Filled = true
+FovCircle.Filled = false
 FovCircle.Transparency = _G.fovTransparency
-FovCircle.Thickness = 2
+FovCircle.Thickness = 1
 
 local function GetClosestPlayer()
 	local Target = nil
@@ -1113,7 +1113,7 @@ RunService.RenderStepped:Connect(function ()
     FovCircle.Color = _G.CircleColor
     FovCircle.Visible = _G.CircleVisible
     FovCircle.NumSides = _G.CircleSides
-    FovCircle.Filled = true
+    FovCircle.Filled = false
     FovCircle.Transparency = _G.fovTransparency
     FovCircle.Thickness = 1
 
