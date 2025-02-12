@@ -241,7 +241,7 @@ Title.Size = UDim2.new(0, 331, 0, 24)
 
 UICorner_3.Parent = Title
 
-quotasname.Name = "quotasname"
+quotasname.Name = ""
 quotasname.Parent = Title
 quotasname.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
 quotasname.BackgroundTransparency = 1.000
@@ -1115,7 +1115,7 @@ RunService.RenderStepped:Connect(function ()
     FovCircle.NumSides = _G.CircleSides
     FovCircle.Filled = false
     FovCircle.Transparency = _G.fovTransparency
-    FovCircle.Thickness = 1
+    FovCircle.Thickness = 0
 
 	if Holding == true and AimOn == true then
 		ts:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.Aimpart].Position)}):Play()
