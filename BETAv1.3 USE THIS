@@ -250,7 +250,7 @@ quotasname.BorderSizePixel = 0
 quotasname.Position = UDim2.new(0, 0, -0.000333150238, 0)
 quotasname.Size = UDim2.new(0, 329, 0, 25)
 quotasname.Font = Enum.Font.JosefinSans
-quotasname.Text = "\"quotas hub\""
+quotasname.Text = "\"Core hub\""
 quotasname.TextColor3 = Color3.fromRGB(255, 255, 255)
 quotasname.TextSize = 14.000
 quotasname.TextWrapped = true
@@ -1115,7 +1115,7 @@ RunService.RenderStepped:Connect(function ()
     FovCircle.NumSides = _G.CircleSides
     FovCircle.Filled = false
     FovCircle.Transparency = _G.fovTransparency
-    FovCircle.Thickness = 0
+    FovCircle.Thickness = 1
 
 	if Holding == true and AimOn == true then
 		ts:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.Aimpart].Position)}):Play()
