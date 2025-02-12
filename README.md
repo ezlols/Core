@@ -1,2 +1,2 @@
 # Core
-A roblox arsenal script
+A Roblox Script library
