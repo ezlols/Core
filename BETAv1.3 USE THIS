@@ -1046,9 +1046,9 @@ FovCircle.Radius = _G.sizeof
 FovCircle.Color = _G.CircleColor
 FovCircle.Visible = _G.CircleVisible
 FovCircle.NumSides = _G.CircleSides
-FovCircle.Filled = false
+FovCircle.Filled = true
 FovCircle.Transparency = _G.fovTransparency
-FovCircle.Thickness = 0
+FovCircle.Thickness = 2
 
 local function GetClosestPlayer()
 	local Target = nil
@@ -1113,9 +1113,9 @@ RunService.RenderStepped:Connect(function ()
     FovCircle.Color = _G.CircleColor
     FovCircle.Visible = _G.CircleVisible
     FovCircle.NumSides = _G.CircleSides
-    FovCircle.Filled = false
+    FovCircle.Filled = true
     FovCircle.Transparency = _G.fovTransparency
-    FovCircle.Thickness = 0
+    FovCircle.Thickness = 1
 
 	if Holding == true and AimOn == true then
 		ts:Create(Camera, TweenInfo.new(_G.Sensitivity, Enum.EasingStyle.Sine, Enum.EasingDirection.Out), {CFrame = CFrame.new(Camera.CFrame.Position, GetClosestPlayer().Character[_G.Aimpart].Position)}):Play()
