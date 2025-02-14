@@ -947,7 +947,7 @@ box.Name = "box"
 box.Parent = mainesp
 box.BackgroundColor3 = Color3.fromRGB(200, 100, 255)
 box.BackgroundTransparency = 1.000
-box.BorderColor3 = Color3.fromRGB(0, 0, 0)
+box.BorderColor3 = Color3.fromRGB(128, 0, 128)
 box.BorderSizePixel = 0
 box.Size = UDim2.new(1, 0, 1, 0)
 box.Image = "http://www.roblox.com/asset/?id=16946608585"
