@@ -945,7 +945,7 @@ mainesp.Size = UDim2.new(4, 0, 6, 0)
 
 box.Name = "box"
 box.Parent = mainesp
-box.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+box.BackgroundColor3 = Color3.fromRGB(255, 0, 0)
 box.BackgroundTransparency = 1.000
 box.BorderColor3 = Color3.fromRGB(0, 0, 0)
 box.BorderSizePixel = 0
